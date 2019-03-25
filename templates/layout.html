@@ -1,0 +1,53 @@
+<!doctype html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript for Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<html>
+    <head>
+    <title>Bank Marketing Decision</title>
+
+    </head>
+    
+    <body bgcolor= "#FOFOFO">
+       
+        {% block content %}
+        <h1>The Prediction for the test data </h1>
+        <p>Checkout the options and press submit</p>
+       
+        <form id = "upload-form" action = "{{url_for('submit')}}" method="POST">
+        <div class="checkboxes">
+        <style>
+            .checkboxes label {
+              display: block;
+              float: center;
+              padding-right: 10px;
+              padding-left: 22px;
+              text-indent: 20px;
+            }
+            .checkboxes input {
+              vertical-align: middle;
+            }
+            .checkboxes label span {
+              vertical-align: middle;
+            }
+        </style>
+        <label>
+        <input id ="id_is_download" type="checkbox" name="download"> <span>Download</span>
+        </label>
+        <label>
+        <input id ="id_is_display" type="checkbox" name="display"> <span>Display</span><br>
+        <input type = "submit" value="Submit" margins="100px">
+        </label>
+        
+       
+        </div>
+        </form> 
+       
+       <!--   {{output | safe}}
+        {% endblock %}-->
+     
+    </body>
+    
+</html>

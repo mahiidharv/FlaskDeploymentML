@@ -1,0 +1,22 @@
+<!doctype html>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript for Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<html  lang='en'>
+    <head>
+    <meta charset="UTF-8">
+    <title>Bank Marketing Decision</title>
+
+    </head>
+    <body bgcolor= "#FOFOFO">
+       
+        {% block content %}
+        <h1>The Prediction for the test data </h1>
+        {{output | safe}}
+        {% endblock %}
+     
+    </body>
+    
+</html>
